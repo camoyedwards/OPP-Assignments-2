@@ -20,12 +20,13 @@ public class Main {
           sales1.setFirstname(scanner.next());
           salesRepList.add(sales1);
         }
-        System.out.println("");
+        System.out.println("The name of sale rep:");
         for (SalesRep sale1:salesRepList) {
             System.out.println(sale1.getFirstname());
         }
      Manager management1 = new Manager("Oats",
-             "Porridge","56",80,3600);
+             "Porridge","56",
+             80,3600);
 
      management1.display();
 
