@@ -8,6 +8,7 @@ public class StaffMember {
     private double hoursWorked;
 
     // Constructor
+    public StaffMember(){}
     public StaffMember(String firstname, String lastname, String deptNumber, double hoursWorked) {
         this.firstname = firstname;
         this.lastname = lastname;
@@ -54,5 +55,6 @@ public class StaffMember {
         System.out.println("Lastname: " + lastname);
         System.out.println("Department Number: " + deptNumber);
         System.out.println("Hours Worked: " + hoursWorked);
+
     }
 }
