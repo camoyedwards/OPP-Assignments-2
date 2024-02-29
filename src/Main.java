@@ -4,16 +4,19 @@ import Payrollmanagement.StaffMember;
 
 import java.util.Scanner;
 
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
         Scanner scanner = new Scanner(System.in);
      SalesRep sales1  =  new SalesRep() ;
+     System.out.println(" Enter Sales rep Name");
+    System.out.print("\tFirst Name: ");
+    sales1.setFirstname(scanner.next());
+
+
 
      Manager management1 = new Manager("Oats", "Porridge","56",80,3600);
 
