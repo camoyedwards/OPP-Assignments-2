@@ -21,12 +21,14 @@ public class Manager extends StaffMember {
 
     // Constructor
     public Manager (){};
-    public Manager(String firstname, String lastname, String deptNumber, double hoursWorked, double bonus) {
+    public Manager(String firstname, String lastname, String deptNumber,
+                   double hoursWorked, double bonus) {
         super(firstname, lastname, deptNumber, hoursWorked);
         this.bonus = bonus;
     }
 
-    public Manager(java.lang.String firstname, java.lang.String lastname, java.lang.String deptNumber, double hoursWorked) {
+    public Manager(java.lang.String firstname, java.lang.String lastname,
+                   java.lang.String deptNumber, double hoursWorked) {
         super(firstname, lastname, deptNumber, hoursWorked);
     }
 
