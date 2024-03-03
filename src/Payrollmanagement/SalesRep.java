@@ -23,6 +23,7 @@ public class SalesRep extends StaffMember {
 
     // Override display method
     @Override
+
     public void display() {
         super.display();
         System.out.println("Allowance: " + allowance);
