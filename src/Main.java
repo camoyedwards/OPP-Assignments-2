@@ -11,16 +11,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-     SalesRep sales1  =  new SalesRep() ;
-     System.out.println(" Enter Sales rep Name");
-      sales1.setFirstname(scanner.next());
-      ArrayList<SalesRep> salesRepList = new ArrayList<>();
+        ArrayList<SalesRep> salesRepList = new ArrayList<>();
+
 
       for (int i = 0; i < 5; i++) {
-
+          SalesRep sales1  =  new SalesRep() ;
+          System.out.println(" Enter Sales rep Name");
+          sales1.setFirstname(scanner.next());
+          salesRepList.add(sales1);
         }
-
-     Manager management1 = new Manager("Oats", "Porridge","56",80,3600);
+        for (SalesRep sale1:salesRepList) {
+            System.out.println(sale1.getFirstname());
+        }
+     Manager management1 = new Manager("Oats",
+             "Porridge","56",80,3600);
 
      management1.display();
 
