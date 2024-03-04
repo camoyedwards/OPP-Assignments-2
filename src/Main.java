@@ -2,6 +2,7 @@ import Payrollmanagement.Manager;
 import Payrollmanagement.SalesRep;
 import Payrollmanagement.StaffMember;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -9,14 +10,15 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
      SalesRep sales1  =  new SalesRep() ;
      System.out.println(" Enter Sales rep Name");
-    System.out.print("\tFirst Name: ");
-    sales1.setFirstname(scanner.next());
+      sales1.setFirstname(scanner.next());
+      ArrayList<SalesRep> salesRepList = new ArrayList<>();
 
+      for (int i = 0; i < 5; i++) {
 
+        }
 
      Manager management1 = new Manager("Oats", "Porridge","56",80,3600);
 
