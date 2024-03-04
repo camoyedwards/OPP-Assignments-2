@@ -20,6 +20,7 @@ public class Main {
           sales1.setFirstname(scanner.next());
           salesRepList.add(sales1);
         }
+        System.out.println("");
         for (SalesRep sale1:salesRepList) {
             System.out.println(sale1.getFirstname());
         }
