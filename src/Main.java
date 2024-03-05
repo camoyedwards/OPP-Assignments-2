@@ -13,8 +13,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         ArrayList<SalesRep> salesRepList = new ArrayList<>();
 
-
-      for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
           SalesRep sales1  =  new SalesRep() ;
           System.out.println(" Enter Sales rep Name");
           sales1.setFirstname(scanner.next());
